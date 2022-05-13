@@ -1,0 +1,124 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: "cont-nav-bar cont-nav-bar " "cont-side-bar cont-productos" "cont-footer cont-footer";
+    grid-template-columns: 37% 63%;
+    background-color: #FFFACD;
+}
+
+.cont-nav-bar{
+    grid-area: cont-nav-bar;
+    color: white;
+    background-color: #FF69B4;
+    text-align: center;
+    height: 10vh;
+}
+
+.form-texto{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cont-side-bar{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFACD;
+}
+
+.menu{
+    list-style: none;
+    text-align: left;
+}
+
+
+.form-texto-li{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cont-gen-productos{
+    display: grid;
+    grid-area: cont-productos;
+    grid-template-columns: auto;
+    background-color: #FFFACD;
+    gap: 2vh;
+    margin-top: 2vh;
+    margin-block-end: 2vh;
+}
+
+.cont-card-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 85%;
+    border: #FF69B4 solid;
+    background-color: white;
+    
+}
+
+.for-img{
+  
+    width: 80%;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    background-color: #FF69B4 ;
+    color: white;
+    border: none;
+}
+
+.formato-boton{
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+.cont-footer{
+    grid-area: cont-footer;
+    color: white;
+    background-color: #FF69B4;
+    text-align: center;
+    height: 10vh;
+}
+
+@media ( min-width: 600px) and (max-width: 990px){
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: "cont-nav-bar cont-nav-bar " "cont-side-bar cont-productos" "cont-footer cont-footer";
+        grid-template-columns: 20% 80%;
+        background-color: #FFFACD;
+    }
+    
+    .cont-gen-productos{
+        display: grid;
+        grid-area: cont-productos;
+        background-color: #FFFACD;
+        grid-template-columns: auto auto;
+        gap: 2vh;
+        margin-top: 2vh;
+        margin-block-end: 2vh;
+    }
+}
+
+@media ( min-width: 991px){
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: "cont-nav-bar cont-nav-bar " "cont-side-bar cont-productos" "cont-footer cont-footer";
+        grid-template-columns: 20% 80%;
+        background-color: #FFFACD;
+    }
+    
+    .cont-gen-productos{
+        display: grid;
+        grid-area: cont-productos;
+        background-color: #FFFACD;
+        grid-template-columns: auto auto auto;
+        gap: 2vh;
+        margin-top: 2vh;
+        margin-block-end: 2vh;
+    }
+}
+
